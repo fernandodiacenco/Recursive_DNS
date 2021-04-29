@@ -33,12 +33,13 @@ Will one of the applications tested be faster than the others, or they are more 
 
 <b>THE ENVIRONMENT</B>
 
-I deployed virtual machines running Debian 10 with 1gb ram, 4 cpu cores, each one running one of the following packages
-Unbound 1.9.0 From Repository
-Unbound 1.13.1 Compiled from source
-PowerDNS 4.1.11 From Repository
-PowerDNS 4.4.3 Compiled from source
-Windows Server 2016 DNS
+I deployed virtual machines running Debian 10 with 1gb ram, 4 cpu cores, each one running one of the following packages:
+
+* Unbound 1.9.0 From Repository
+* Unbound 1.13.1 Compiled from source
+* PowerDNS 4.1.11 From Repository
+* PowerDNS 4.4.3 Compiled from source
+* Windows Server 2016 DNS
 
 The configuration was left to the defaults, or the minimum necessary to work
 
@@ -75,12 +76,12 @@ The results where as follows:
 <b>CONCLUSION</b>
 
 By analyzing the results we can determine:
-*It is indeed faster to use a local recursive DNS
-*There is no noticeable difference between prepackaged binaries and compiled application in this context
-*Cloudfare and Google, being at an average of 4-5 milliseconds would to the end user be no different to the local DNS
-*OpenDNS would be middle ground
-*Quad9 and Freenom would make a difference to the end user perception, anything above 100ms is quite perceptible
-*There is no noticeable benefit in compiling the application, other than having the most recent version of it
+* It is indeed faster to use a local recursive DNS
+* There is no noticeable difference between prepackaged binaries and compiled application in this context
+* Cloudfare and Google, being at an average of 4-5 milliseconds would to the end user be no different to the local DNS
+* OpenDNS would be middle ground
+* Quad9 and Freenom would make a difference to the end user perception, anything above 100ms is quite perceptible
+* There is no noticeable benefit in compiling the application, other than having the most recent version of it
 
 So deploying a recursive DNS in your network is a good investment of time and resources to improve the overall quality of experience for end users
 
