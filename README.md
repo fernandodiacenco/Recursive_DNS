@@ -147,7 +147,6 @@ Bellow are the steps used to install and configure the applications used in this
     sudo nano /etc/powerdns/recursor.conf
     
     allow-from=172.16.0.0/12
-    
     local-address=0.0.0.0
     
     sudo service pdns-recursor restart
